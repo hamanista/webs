@@ -18,6 +18,10 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap');
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -77,6 +81,7 @@
       gap: 10px;
       cursor: pointer;
       letter-spacing: 1px;
+      text-decoration: none;
     }
 
     /* NAV */
@@ -470,13 +475,13 @@
     <div class="container">
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#" class="active">ماڵەوە</a></li>
+        <li><a href="index.html" class="active">ماڵەوە</a></li>
         <li><a href="#">خزمەتگوزاری</a></li>
         <li><a href="#">دەربارە</a></li>
-        <li><a href="#-">پەیوەندی</a></li>
+        <li><a href="#">پەیوەندی</a></li>
       </ul>
 
-      <div class="logo">HAMA NISTA</div>
+      <a href="#home" class="logo">HAMA NISTA</a>
 
       <div class="menu-btn" onclick="toggleMenu()">
         ☰
@@ -488,7 +493,7 @@
 
   <!-- HERO -->
 
-  <section class="hero">
+  <section class="hero" id="home">
 
     <div class="profile-img-container">
       <img src="profile.jpg" alt="HAMA NISTA Profile" class="profile-img">
